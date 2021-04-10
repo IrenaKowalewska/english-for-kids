@@ -1,6 +1,6 @@
-## Task [RS School](https://rs.school/) English for kids для 
+## Task [RS School](https://rs.school/) English for kids
 
-![screenshot]()
+![screenshot](https://github.com/IrenaKowalewska/english-for-kids/blob/main/src/assets/main-img.png)
 
 [Deploy English for kids](https://irenakowalewska-english-for-kids.netlify.app/)
 
