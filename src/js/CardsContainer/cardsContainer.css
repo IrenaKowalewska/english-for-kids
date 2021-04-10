@@ -1,0 +1,215 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 93rem;
+  width: 90%;
+  margin: 1.9rem auto 1.3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  width: 20rem;
+  height: 16.3rem;
+  background: linear-gradient(40deg,#00bf82,#0099ae);
+  border-radius: 7px;
+  transition: all .3s linear;
+  position: relative;
+  margin-bottom: 1rem;
+  -webkit-animation: rotate-scale-up 0.45s linear both;
+	        animation: rotate-scale-up 0.45s linear both;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.35), 0 9px 6px rgba(0,0,0,0.35);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.card.play-mode {
+  background:  linear-gradient(40deg,#ffd86f,#fc6262);
+}
+
+.card-header {
+  height: 2.8rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.card-body {
+  transition: all .6s ease;
+}
+
+.img-container {
+  border-radius: 10px;
+  width: 17rem;
+  height: 12rem;
+}
+
+.img-container-game {
+  width: 19rem;
+  height: 15.5rem;
+}
+
+.img-container-game img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+.card-header {
+  display: flex;
+}
+.reverse-button {
+  margin-left: 4.3rem;
+  cursor: pointer;
+  width: 1.8rem;
+}
+.reverse-button:hover {
+  background-color: white;
+  border-radius: 50%;
+  transform: scale(1.2);
+}
+
+/* FLIP */
+.card-flip {
+  position: relative;
+
+}
+
+.front {
+  backface-visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  transition: all .6s linear;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: all .6s linear;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.front-flip {
+  transform: rotateY(180deg);
+}
+
+.back-flip {
+  transform: rotateY(360deg);
+}
+
+.btn-start-game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0 20px;
+  
+}
+
+.btn-start-game,
+.btn-play-new-game,
+.btn-repeat {
+  width: 10rem;
+  height: 3.1rem;
+  background:  linear-gradient(40deg,#ffd86f,#fc6262);
+  font-family: cursive;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-repeat {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  outline: none;
+}
+
+.btn-repeat:hover {
+  transform: scale(0.9);
+}
+
+.end-game-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.end-game {
+  width: 18.7rem;
+  height: 18.7rem;
+  margin-bottom: 10px;
+}
+
+.end-game img {
+  width: 100%;
+}
+
+.game-errors {
+  color: red;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.star-container {
+  width: 100%;
+  height: 1.8rem;
+  overflow: hidden;
+}
+.star-img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+            transform: scale(1.1) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .card {
+    width: 18rem;
+    height: 15.5rem;
+  }
+  .img-container-game {
+    width: 17rem;
+    height: 14.5rem;
+  }
+}

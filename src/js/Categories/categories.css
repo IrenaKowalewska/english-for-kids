@@ -1,0 +1,68 @@
+.card-flip {
+  position: relative;
+
+}
+
+.front {
+  backface-visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  transition: all .6s linear;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: all .6s linear;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.front-flip {
+  transform: rotateY(180deg);
+}
+
+.back-flip {
+  transform: rotateY(360deg);
+}
+
+
+table {
+  font-size: 25px;
+  border: 2px solid #00bf82;
+}
+
+table th {
+  border: 2px solid #00bf82;
+}
+
+table td {
+  border: 2px solid #00bf82;
+}
+
+.btn-statistic {
+  background: linear-gradient(40deg,#00bf82,#0099ae);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+.btn-statistic:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 590px) {
+  table {
+    font-size: 14px;
+    border: 2px solid #00bf82;
+  }
+  
+}

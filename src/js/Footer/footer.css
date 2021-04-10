@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.25rem;
+}
+.footer .logo-rss {
+  width: 7.4rem;
+  height: 3.1rem;
+}
+.footer .logo-rss  img{
+  width: 100%;
+}
+.footer h2 {
+  font-size: 30px;
+}
+.footer .author {
+  width: 7.4rem;
+  height: 5rem;
+}
+.footer .author img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 590px) {
+  .footer .logo-rss,
+  .footer .author {
+    width: 5rem;
+    height: 3.1rem;
+  }
+
+  .footer h2 {
+    font-size: 20px;
+  }
+}
